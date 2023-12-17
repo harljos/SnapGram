@@ -220,7 +220,7 @@ export async function savePost(postId: string, userId: string) {
     }
 }
 
-export async function deletePost(savedRecordId: string) {
+export async function deleteSavedPost(savedRecordId: string) {
     try {
         const statusPost = await databases.deleteDocument(
             appwriteConfig.databaseId,
