@@ -342,7 +342,7 @@ export async function getInfinitePosts({ pageParam }: { pageParam: number }) {
     }
 }
 
-export async function seachPosts(searchTerm: string) {
+export async function searchPosts(searchTerm: string) {
     try {
         const posts = await databases.listDocuments(
             appwriteConfig.databaseId,
